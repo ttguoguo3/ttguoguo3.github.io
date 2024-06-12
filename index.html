@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0028)https://mmt-bench.github.io/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>MMT-Bench</title>
+  <title>MM-NIAH</title>
     <style>
         .hidden {
             display: none;
@@ -57,30 +57,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/OpenGVLab/Multi-Modality-Arena">
-            <b>Lvlm-ehub</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
-          </a>
-        </div>
-      </div>
-    </div>
 
-  </div>
-</nav>
 
 <section class="hero">
   <div class="hero-body">
@@ -140,7 +117,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/pdf/2404.16006.pdf" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2406.07230v1" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf" aria-hidden="true"></i>
                   </span>
@@ -158,7 +135,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/OpenGVLab/MMT-Bench" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/OpenGVLab/MM-NIAH" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github" aria-hidden="true"></i>
                   </span>
@@ -168,7 +145,7 @@
               
               <!-- Leaderboard Link. -->
               <span class="link-block">
-                <a href="https://mmt-bench.github.io/#leaderboard" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://ttguoguo3.github.io/#leaderboard" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon has-text-white">
                     <i class="fa-solid fa-trophy" aria-hidden="true"></i>
                       <!-- <p style="font-size:18px">🏆</p> -->
@@ -177,14 +154,7 @@
                 </a>
               </span>
               <!-- EvalAI Link. -->
-              <span class="link-block">
-                <a href="https://mmt-bench.github.io/#examples" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon has-text-white">
-                    <i class="fa-solid fa-book" aria-hidden="true"></i>
-                  </span>
-                  <span>Examples</span>
-                </a>
-              </span>
+              
             </div>
 
           </div>
@@ -230,10 +200,7 @@
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
           <p>
-            <b>🔥[2024-04-26]: We release our code! Stay tuned!</b>
-          </p>
-          <p>
-            <b>🔥[2024-04-25]: We release our paper! Stay tuned!</b>
+            <b>🔥[2024-06-11]: We release our paper! Stay tuned!</b>
           </p>
       </div>      
         <h2 class="title is-3">Introduction</h2>
@@ -282,11 +249,13 @@
           
           <br>
           <p>
-            1. The lack of high-quality multimodal long-context datasets, which require substantial resources and effort to create.
-            <br>
-            2. The need for evaluation questions that are sufficiently complex to require models to integrate information from the entire long context to answer correctly.
-            <br>
-            3. The fact that existing multimodal models have not been evaluated on long-context multimodal content, highlighting the necessity for robust evaluation protocols to fairly compare the performance of current methods.
+            <ol>
+            <li>The lack of high-quality multimodal long-context datasets, which require substantial resources and effort to create.</li>
+
+            <li>The need for evaluation questions that are sufficiently complex to require models to integrate information from the entire long context to answer correctly.</li>
+            
+            <li>The fact that existing multimodal models have not been evaluated on long-context multimodal content, highlighting the necessity for robust evaluation protocols to fairly compare the performance of current methods.</li>
+            </ol>
           </p>
         </div>
       </div>
@@ -2715,26 +2684,27 @@ For the counting task with image needles, even though at most 5 images can be pa
 In the heatmaps, green slots indicate higher performance, while red slots indicate lower performance.
 Additionally, the average performance across depths for each context length range is presented in table format.
 The main findings from these results are detailed as follows.
-          <br>
-            1. Performance degrades while context length increases
-          <br>
-          2. Image needles are much more difficult than text needles.
-          <br>
-          3. Models pre-trained on image-text interleaved data do not exhibit superior performance.
-          <br>
-          4. The ''Lost in the Middle'' problem also exists in MLLMs.
-          <br>
-          5. The most advanced MLLM still struggles to comprehend multimodal documents.
-          <br>
-          6. Long context capability of LLMs is NOT retained in MLLMs.
-          <br>
-          7. RAG boosts Text Needle Retrieval but not Image Needle Retrieval.
-          <br>
-          8. Humans achieve near-perfect performance on MM-NIAH.
-          <br>
-          9. Training on background documents does not boost performance on MM-NIAH.
-          <br>
-          10. MLLMs fail to recognize the exact number of images in the document.
+        <ol>
+          <li>Performance degrades while context length increases</li>
+          
+          <li>Image needles are much more difficult than text needles.</li>
+          
+          <li>Models pre-trained on image-text interleaved data do not exhibit superior performance.</li>
+          
+          <li>The ''Lost in the Middle'' problem also exists in MLLMs.</li>
+          
+          <li>The most advanced MLLM still struggles to comprehend multimodal documents.</li>
+          
+          <li>Long context capability of LLMs is NOT retained in MLLMs.</li>
+          
+          <li>RAG boosts Text Needle Retrieval but not Image Needle Retrieval.</li>
+          
+          <li>Humans achieve near-perfect performance on MM-NIAH.</li>
+          
+          <li>Training on background documents does not boost performance on MM-NIAH.</li>
+          
+          <li>MLLMs fail to recognize the exact number of images in the document.</li>
+        </ol>
         </div>
         <div class="columns is-centered m-6">
           <div class="column is-full has-text-centered content">
@@ -2792,13 +2762,13 @@ The main findings from these results are detailed as follows.
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
     <pre><code>
-     @misc{ying2024mmtbench,
-      title={MMT-Bench: A Comprehensive Multimodal Benchmark for Evaluating Large Vision-Language Models Towards Multitask AGI}, 
-      author={Kaining Ying and Fanqing Meng and Jin Wang and Zhiqian Li and Han Lin and Yue Yang and Hao Zhang and Wenbo Zhang and Yuqi Lin and Shuo Liu and Jiayi Lei and Quanfeng Lu and Runjian Chen and Peng Xu and Renrui Zhang and Haozhe Zhang and Peng Gao and Yali Wang and Yu Qiao and Ping Luo and Kaipeng Zhang and Wenqi Shao},
-      year={2024},
-      eprint={2404.16006},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      @misc{wang2024needle,
+        title={Needle In A Multimodal Haystack}, 
+        author={Weiyun Wang and Shuibo Zhang and Yiming Ren and Yuchen Duan and Tiantong Li and Shuo Liu and Mengkang Hu and Zhe Chen and Kaipeng Zhang and Lewei Lu and Xizhou Zhu and Ping Luo and Yu Qiao and Jifeng Dai and Wenqi Shao and Wenhai Wang},
+        year={2024},
+        eprint={2406.07230},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
       }
 </code></pre>
   </div>
